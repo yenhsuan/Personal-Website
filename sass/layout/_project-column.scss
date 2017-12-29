@@ -1,0 +1,13 @@
+@media (min-width: 600px) {
+    .project-card.column {
+      margin-top: 3rem !important;
+      margin-left: 0 !important;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .project-card.column {
+      width: 33.33333333%;
+      margin: 0 auto;
+    }
+}

@@ -1,0 +1,80 @@
+.btn:link, btn:visited {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    // text-transform: uppercase;
+    border-radius: 2.5rem;
+    transition: all .2s;
+    box-shadow: 0 1rem 2rem rgba(0, 0 ,0, .2);
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .25s;
+}
+
+.btn:hover::after {
+    // transform: scale(1.6);
+    opacity: 0;
+}
+
+.btn:active {
+    transform: translateY(.3rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0 ,0, .2);
+}
+
+.btn-header-main {
+    margin-top: 6rem;
+    background-color: white;
+    padding: 1.5rem 5rem 1.5rem 5rem !important;
+    color: #777;
+}
+
+.btn-header-main::after {
+    background-color: #fff;
+}
+
+.btn-move-from-bottom {
+    animation-name: moveInBottom;
+    animation-duration: .4s; 
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+.btn-card {
+    padding: 1rem 1.5rem !important;
+    margin: 1rem 2rem;
+    background-color: white;
+    color: #777;
+    min-width: 15rem
+}
+
+.menu {
+    position: fixed;
+    padding: 1rem 1.75rem 1rem 1.75rem;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 1rem 5rem rgba(0, 0 ,0, .2);
+    border-radius: 50%;;
+    right: 6rem;
+    top: 6rem;
+    background: white;
+    color: black;
+    z-index:5000;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: none;
+    }
+}
