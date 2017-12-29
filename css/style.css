@@ -191,17 +191,17 @@ body {
       top: 5%;
       width: 95%; }
     .card-image-1 {
-      background-image: url(../img/project-cod.png); }
+      background-image: url(../img/project-cod.jpg); }
     .card-image-2 {
-      background-image: url(../img/project-news.png); }
+      background-image: url(../img/project-news.jpg); }
     .card-image-3 {
-      background-image: url(../img/project-coj.png); }
+      background-image: url(../img/project-coj.jpg); }
     .card-image-4 {
-      background-image: url(../img/project-yrb.png); }
+      background-image: url(../img/project-yrb.jpg); }
     .card-image-5 {
-      background-image: url(../img/project-spg.png); }
+      background-image: url(../img/project-spg.jpg); }
     .card-image-6 {
-      background-image: url(../img/project-crud.png); }
+      background-image: url(../img/project-crud.jpg); }
   @media (max-width: 960px) {
     .card {
       margin-top: 3rem;
@@ -212,7 +212,7 @@ body {
       box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2); }
       .card-image {
         background-size: cover;
-        height: 30rem; }
+        height: 25rem; }
       .card-side {
         height: auto;
         position: relative;
@@ -281,7 +281,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url(../img/bg-home.png);
+  background-image: url(../img/bg-home.jpg);
   background-position: center;
   background-size: cover;
   position: relative; }
@@ -470,7 +470,8 @@ body {
   text-align: center;
   max-width: 100% !important;
   width: 100% !important;
-  margin: 0 !important; }
+  margin: 0 !important;
+  padding: 0 !important; }
 
 @media (min-width: 600px) {
   .project-card.column {
@@ -558,20 +559,21 @@ body {
     margin-left: 0 !important; } }
   @media (max-width: 960px) and (max-width: 600px) {
     .about-column-2 {
-      padding: 0 2.75rem; } }
+      padding: 0 2.4rem; } }
 
 #project {
   margin: 0;
   padding: 5rem;
   background-color: #f2f2f2;
   position: relative;
-  background-image: url(../img/bg-project.png);
+  background-image: url(../img/bg-project.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
   @media (max-width: 960px) {
     #project {
-      background-attachment: fixed; } }
+      background-attachment: fixed;
+      padding: .75rem; } }
 
 .project-title {
   text-align: center;
