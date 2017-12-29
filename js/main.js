@@ -1,4 +1,22 @@
 $(document).ready(() => {
+    $('<img/>').attr('src', '../img/bg-project.jpg').on('load', function() {
+        $(this).remove();
+        setTimeout(() => {
+            $(".loader").css("visibility", "hidden");
+            $(".header-primary-main").addClass("header-primary-main-animation");
+            $(".header-primary-sub").addClass("header-primary-sub-animation");
+            $(".btn-header-main").addClass("btn-move-from-bottom");
+        }, 1000);
+    })
+    .on('error', () => {
+        setTimeout(() => {
+            $(".loader").css("visibility", "hidden");
+            $(".header-primary-main").addClass("header-primary-main-animation");
+            $(".header-primary-sub").addClass("header-primary-sub-animation");
+            $(".btn-header-main").addClass("btn-move-from-bottom");
+        }, 1000);
+    });
+
     let scrollTop = 0;
     $(window).scroll(() => {
         scrollTop = $(window).scrollTop();
@@ -24,7 +42,7 @@ $(document).ready(() => {
             $('html, body').animate({scrollTop: $(event.currentTarget.hash).offset().top}, 700, () => {
                 window.location.hash = event.currentTarget.hash;
             });
-        } // End if
+        } 
     });
 
     (function($, win) {
