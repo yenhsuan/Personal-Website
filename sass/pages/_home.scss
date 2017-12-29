@@ -116,9 +116,13 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    
     @media (max-width: 960px) {
-        background-attachment: fixed;
         padding: .75rem;
+    }
+
+    @media (max-width: 500px) {
+        background-image: none;
     }
 }
 

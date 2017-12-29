@@ -201,8 +201,6 @@ body {
     background-size: cover;
     height: 20rem;
     background-blend-mode: screen;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
     background-position: center;
     position: relative; }
     .card-image-title {
@@ -654,8 +652,10 @@ body {
   background-size: cover; }
   @media (max-width: 960px) {
     #project {
-      background-attachment: fixed;
       padding: .75rem; } }
+  @media (max-width: 500px) {
+    #project {
+      background-image: none; } }
 
 .project-title {
   text-align: center;
