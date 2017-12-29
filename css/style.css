@@ -359,6 +359,7 @@ body {
 .header {
   height: 100vh;
   background-image: url(../img/bg-home.jpg);
+  background-color: #333;
   background-position: center;
   background-size: cover;
   position: relative; }
@@ -645,7 +646,7 @@ body {
 #project {
   margin: 0;
   padding: 5rem;
-  background-color: #f2f2f2;
+  background-color: #444;
   position: relative;
   background-image: url(../img/bg-project.jpg);
   background-attachment: fixed;

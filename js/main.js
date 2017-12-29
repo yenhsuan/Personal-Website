@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $('<img/>').attr('src', '../img/bg-project.jpg').on('load', function() {
+    $('<img/>').attr('src', '../img/bg-home.jpg').on('load', function() {
         $(this).remove();
         setTimeout(() => {
             $(".loader").css("visibility", "hidden");
