@@ -19,7 +19,7 @@
         
         
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/animations.css">
@@ -50,7 +50,7 @@
             <div class="overlay-content">
                 <a href="#home" onclick="closeNav()">Home</a>
                 <a href="#about" onclick="closeNav()">About Me</a>
-                <a href="#project" onclick="closeNav()">Project</a>
+                <a href="#projects" onclick="closeNav()">Project</a>
                 <a href="../resources/Yenhsuan_Chen_Resume.pdf" onclick="closeNav()">Resume</a>
             </div>
         </div>      
@@ -63,7 +63,7 @@
                 <ul class="navbar-list">
                     <a href="#home"><li id="li-home" class="active">Home</li></a>
                     <a href="#about"><li id="li-about">About Me</li></a>
-                    <a href="#project"><li id="li-project">Project</li></a>
+                    <a href="#projects"><li id="li-project">Project</li></a>
                     <a href="../resources/Yenhsuan_Chen_Resume.pdf"><li>Resume</li></a>
                 </ul>
             </div>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="row animatedParent">
-                        <div class="one-third column animated fadeInUp about-column-1">
+                        <div class="one-third column animated tada about-column-1">
                                 <div class="about-card">
                                         <img class="img-circle" src="img/profile.png" style="width:60%">
                                         <h4 class="about-card-name">Yenhsuan, Chen (Terry)</h4>
@@ -97,23 +97,31 @@
                                         <p>Master Student in CS@USC</p>
                                         <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Los Angeles, CA</p><br />
                                         <div class="about-card-link">
-                                            <a class="about-icon" href="https://github.com/yenhsuan" target="_blank"><i class="fa fa-github"></i></a> 
+                                            <a class="about-icon" href="https://github.com/yenhsuan" target="_blank"><i class="fab fa-github"></i></a> 
                                             <a class="about-icon" href="mailto:yenhsuac@usc.edu" target="_blank"><i class="fa fa-envelope gmail"></i></a> 
-                                            <a class="about-icon" href="https://www.linkedin.com/in/yenhsuan/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                            <a class="about-icon" href="https://www.linkedin.com/in/yenhsuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                         </div>
                                 </div>
                         </div>
                         <div class="two-thirds column animated fadeInUpShort about-column-2">
                             <div class="about-skills">
-                                    Hi, I'm Yenhsuan, currently a graduate student in CS at USC with a focus of frontend and fullstack technologies.
-                                    I am a quick learner and experience with M.E.A.N. Stack web application development.<br />
-                                    Besides, I have strong knowledge in algorithm and data structure, and love coding challenge so mush. Look at my <a href="https://github.com/yenhsuan/LeetCode-Python" target="_blank">solutions</a> for LeetCode problems.<br />
+                                    <div class="about-skills-heading">Hi, I'm Yenhsuan!</div>
+                                        - MS in Computer Science from USC Viterbi<br />
+                                        - Strong in algorithm and data structure<br />
+                                        - Familiar with M.E.A.N. stack web application development<br />
+                                        - Love coding challenge & enjoy making side projects<br /><br />
+
+                                        I am actively seeking a full-time SDE / Front-End / Fullstack position.<br />
+                                        Please take a look of my resume and checkout my project demos.<br />
+                                        Feel free to contact me at Linkedin or by Email.<br />
+                                    </div>
+                                    <a class="about-icon about-icon-linkedin" href="https://www.linkedin.com/in/yenhsuan/" target="_blank"><i class="fab fa-linkedin-in"></i> yenhsuan</a>
+                                    <a class="about-icon about-icon-mail" href="mailto:yenhsuac@usc.edu" target="_blank"><i class="fa fa-envelope gmail"></i> yenhsuac@usc.edu</a>
+                                    <a class="about-icon about-icon-resume" href="../resources/Yenhsuan_Chen_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
                                     
-                                    I'm expected to graduate in May 2018, and am seeking a full-time job.<br />
-                                    Feel free to take a look at my projects and see demo at <a href="#project">projects.</a><br />
-                                    Check out my academic & professional experience at <a href="../resources/Yenhsuan_Chen_Resume.pdf">resume.</a><br />
-                                    Contact me at <a href="https://www.linkedin.com/in/yenhsuan/" target="_blank">Linkedin</a> or by <a href="mailto:yenhsuac@usc.edu">email</a>.
-                            </div>
+
+
+
                             <div class="about-programming-icon">
                                 <img srcset="img/React.js_logo-512.png 512w" sizes="5vw"
                                 src="img/React.js_logo-512.png">
@@ -137,194 +145,176 @@
                 </div>
         </section>
         
-        <section id="project">
-                <div id="project-container" class="container animatedParent">
-                    <div class="row">
-                        <div class="project-title">
-                            Project
+
+        <section id ="projects">
+            <div class="row">
+                <div class="project-title">
+                    Project
+                </div>
+            </div>
+            
+            
+            <div class="animatedParent col">
+                <div id="project-ancor" class="project-cards-container animated fadeInUpShort">
+                    <div class="project-cards-cover project-cards-cover-1"></div>
+                    <div class="project-cards-body">
+                        <div class="project-cards-body-title">
+                            <h1>Collaborative Online Docs</h1>
+                        </div>
+                        <div class="project-cards-body-description">
+                            
+                        </div>
+                        <div class="project-cards-body-tags">
+                            <ul>
+                            <li>Angular</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Socket.io</li>
+                            <li>Quill.js</li>
+                            <li>MongoDb</li>
+                            <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="project-cards-body-links">
+                            <a href="https://github.com/yenhsuan/Docs-Collaboration" target="_blank" class="btn project-cards-btn project-cards-body-links-github"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
+                            <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:5566/start" target="_blank" class="btn project-cards-btn project-cards-body-links-demo"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
                         </div>
                     </div>
-                   
-                    <div class="row animated fadeInUpShort">
-                        <div class="project-card column">
-                            <div class="card">
-                                <div class="card-side card-side-front">
-                                    <div class="card-image card-image-1">
-                                        <div class="card-image-title card-image-title-1">
-                                            Collaborative Docs
-                                        </div>
-                                    </div>
-                                    <div class="card-details">
-                                        <ul>
-                                            <li>Angular 4</li>
-                                            <li>Node.js</li>
-                                            <li>Express.js</li>
-                                            <li>Socket.io</li>
-                                            <li>MongoDB</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="card-side card-side-back card-side-back-1">
-                                    <div class="card-demo">
-                                        <h4 class="card-demo-title">Collatberative Docs</h4>
-                                        <a href="https://github.com/yenhsuan/Docs-Collaboration" target="_blank" class="btn btn-card"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                                        <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:5566/start" target="_blank" class="btn btn-card"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
-                                    </div>
-                                </div>
+                </div>
+            </div>
+            <div class="animatedParent col">
+                <div class="project-cards-container animated fadeInUpShort">
+                        <div class="project-cards-cover project-cards-cover-2"></div>
+                        <div class="project-cards-body">
+                            <div class="project-cards-body-title">
+                                <h1>Top News Scraper</h1>
                             </div>
-                        </div>
-                        <div class="project-card column">
-                            <div class="card">
-                                <div class="card-side card-side-front">
-                                    <div class="card-image card-image-2">
-                                        <div class="card-image-title card-image-title-2">
-                                            Top News Scraper
-                                        </div>
-                                    </div>
-                                    <div class="card-details">
-                                        <ul>
-                                            <li>React.js</li>
-                                            <li>Node.js</li>
-                                            <li>Python-RPC</li>
-                                            <li>Redis</li>
-                                            <li>MongoDB</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                    
-                                <div class="card-side card-side-back card-side-back-2">
-                                    <div class="card-demo">
-                                        <h4 class="card-demo-title">Top News Scraper</h4>
-                                        <a href="https://github.com/yenhsuan/news-recommendation" target="_blank" class="btn btn-card"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                                        <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:8787/" target="_blank" class="btn btn-card"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card column">
-                            <div class="card">
-                                <div class="card-side card-side-front">
-                                    <div class="card-image card-image-3">
-                                        <div class="card-image-title card-image-title-1">
-                                            Collaborative Online Code Judge
-                                        </div>
-                                    </div>
-                                    <div class="card-details">
-                                        <ul>
-                                            <li>Angular 2</li>
-                                            <li>Node.js</li>
-                                            <li>Flask</li>
-                                            <li>Socket.io</li>
-                                            <li>Docker</li>
-                                            <li>MongoDB</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="project-cards-body-description">
                                 
-                                <div class="card-side card-side-back card-side-back-1">
-                                    <div class="card-demo">
-                                        <h4 class="card-demo-title">Collaborative Online Code Judge</h4>
-                                        <a href="https://github.com/yenhsuan/Collaborative-Online-Code-Judge" target="_blank" class="btn btn-card"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                                        <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:3000/home" target="_blank" class="btn btn-card"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
-                                    
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="project-card column">
-                            <div class="card">
-                                <div class="card-side card-side-front">
-                                    <div class="card-image card-image-4">
-                                        <div class="card-image-title card-image-title-2">
-                                            Youtube Repeater
-                                        </div>
-                                    </div>
-                                    <div class="card-details">
-                                        <ul>
-                                            <li>JavaScripe ES6</li>
-                                            <li>HTML5</li>
-                                            <li>CCS3</li>
-                                            <li>Google Chrome Extension</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                <div class="card-side card-side-back card-side-back-2">
-                                    <div class="card-demo">
-                                        <h4 class="card-demo-title">Youtube Repeater</h4>
-                                        <!-- <a href="#popup" class="btn btn-card"><i class="fa fa-github" aria-hidden="true"></i> Github</a> -->
-                                        <a href="https://chrome.google.com/webstore/detail/youtube-repeat-button/aihdpnkmhcbjkfonmmfepcjjfaenobip" target="_blank" class="btn btn-card"><i class="fa fa-globe" aria-hidden="true"></i> App Store</a>
-                                    </div>
-                                </div>
+                            <div class="project-cards-body-tags">
+                                <ul>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Python-RPC</li>
+                                <li>Redis</li>
+                                <li>MongoDb</li>
+                                <li>Machine Learning</li>
+                                </ul>
                             </div>
-                        </div>
-                        
-                        <div class="project-card column">
-                            <div class="card">
-                                <div class="card-side card-side-front">
-                                    <div class="card-image card-image-5">
-                                        <div class="card-image-title card-image-title-1">
-                                            Chrome Productive Page
-                                        </div>
-                                    </div>
-                                    <div class="card-details">
-                                        <ul>
-                                            <li>Angular 4</li>
-                                            <li>Semantic UI</li>
-                                            <li>JavaScript ES6</li>
-                                            <li>Google Chrome Extension</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                <div class="card-side card-side-back card-side-back-1">
-                                    <div class="card-demo">
-                                        <h4 class="card-demo-title">Chrome Productive Page</h4>
-                                        <!-- <a href="#popup" class="btn btn-card"><i class="fa fa-github" aria-hidden="true"></i> Github</a> -->
-                                        <a href="https://chrome.google.com/webstore/detail/chrome-start-page/cacnefkpccebkfppmhjohfabiejkdpjk" target="_blank" class="btn btn-card"><i class="fa fa-globe" aria-hidden="true"></i> App Store</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card column">
-                            <div class="card">
-                                <div class="card-side card-side-front">
-                                    <div class="card-image card-image-6">
-                                        <div class="card-image-title card-image-title-2">
-                                            Student Record CRUD
-                                        </div>
-                                    </div>
-                                    <div class="card-details">
-                                        <ul>
-                                            <li>Angular 4</li>
-                                            <li>Node.js</li>
-                                            <li>Express.js</li>
-                                            <li>PostgreSQL</li>
-                                            <li>RESTful API</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                <div class="card-side card-side-back card-side-back-2">
-                                    <div class="card-demo">
-                                        <h4 class="card-demo-title">Student Record CRUD</h4>
-                                        <a href="https://github.com/yenhsuan/Student-Record-CRUD-System" target="_blank" class="btn btn-card"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                                        <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:3030/home" target="_blank"  class="btn btn-card"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
-                                    </div>
-                                </div>
+                            <div class="project-cards-body-links">
+                                <a href="https://github.com/yenhsuan/news-recommendation" target="_blank" class="btn project-cards-btn project-cards-body-links-github"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
+                                <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:8787/" target="_blank" class="btn project-cards-btn project-cards-body-links-demo"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
                             </div>
                         </div>
                 </div>
-        </section>
+            </div>
+            <div class="animatedParent col">
+                <div class="project-cards-container animated fadeInUpShort">
+                        <div class="project-cards-cover project-cards-cover-3"></div>
+                        <div class="project-cards-body">
+                            <div class="project-cards-body-title">
+                                <h1>Online Code Judge</h1>
+                            </div>
+                            <div class="project-cards-body-description">
+                                
+                            </div>
+                            <div class="project-cards-body-tags">
+                                <ul>
+                                <li>Angular</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Flask</li>
+                                <li>WEBsocket</li>
+                                <li>Docker</li>
+                                <li>Redis</li>
+                                <li>MongoDb</li>
+                                </ul>
+                            </div>
+                            <div class="project-cards-body-links">
+                                <a href="https://github.com/yenhsuan/Collaborative-Online-Code-Judge" target="_blank" class="btn project-cards-btn project-cards-body-links-github"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
+                                <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:3000/home" target="_blank" class="btn project-cards-btn project-cards-body-links-demo"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="animatedParent col">
+                <div class="project-cards-container animated fadeInUpShort">
+                        <div class="project-cards-cover project-cards-cover-4"></div>
+                        <div class="project-cards-body">
+                            <div class="project-cards-body-title">
+                                <h1>Youtube Repeter</h1>
+                            </div>
+                            <div class="project-cards-body-description">
+                                
+                            </div>
+                            <div class="project-cards-body-tags">
+                                <ul>
+                                <li>JavaScript ES6</li>
+                                <li>CSS3</li>
+                                <li>Chrome Extension</li>
+                                </ul>
+                            </div>
+                            <div class="project-cards-body-links">
+                                <a href="https://chrome.google.com/webstore/detail/youtube-repeat-button/aihdpnkmhcbjkfonmmfepcjjfaenobip" target="_blank" class="btn project-cards-btn project-cards-body-links-app"><i class="fab fa-chrome" aria-hidden="true"></i> App Store</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="animatedParent col">
+                <div class="project-cards-container animated fadeInUpShort">
+                        <div class="project-cards-cover project-cards-cover-5"></div>
+                        <div class="project-cards-body">
+                            <div class="project-cards-body-title">
+                                <h1>Chrome Start Page</h1>
+                            </div>
+                            <div class="project-cards-body-description">
+                                
+                            </div>
+                            <div class="project-cards-body-tags">
+                                <ul>
+                                <li>Angular</li>
+                                <li>Semantic UI</li>
+                                <li>Chrome Extension</li>
+                                </ul>
+                            </div>
+                            <div class="project-cards-body-links">
+                                <a href="https://chrome.google.com/webstore/detail/chrome-start-page/cacnefkpccebkfppmhjohfabiejkdpjk" target="_blank" class="btn project-cards-btn project-cards-body-links-app"><i class="fab fa-chrome" aria-hidden="true"></i> App Store</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="animatedParent col">
+                <div class="project-cards-container animated fadeInUpShort">
+                        <div class="project-cards-cover project-cards-cover-6"></div>
+                        <div class="project-cards-body">
+                            <div class="project-cards-body-title">
+                                <h1>Student Record CRUD</h1>
+                            </div>
+                            <div class="project-cards-body-description">
+                                
+                            </div>
+                            <div class="project-cards-body-tags">
+                                <ul>
+                                <li>Angular</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                            <div class="project-cards-body-links">
+                                <a href="https://github.com/yenhsuan/Student-Record-CRUD-System" target="_blank" class="btn project-cards-btn project-cards-body-links-github"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
+                                <a href="http://ec2-34-210-49-83.us-west-2.compute.amazonaws.com:3030/home" class="btn project-cards-btn project-cards-body-links-demo"><i class="fa fa-globe" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                </div> 
+            </div>
 
+        </section>
         <footer id="footer" class="footer">
             <div class="footer-copyright">
-                ©Copyright 2018 | Built & Designed by Yen-Hsuan(Terry)<br />
-                <i>Photo Credits: Kimy Liu</i>
+                © Copyright 2018 | Built and Designed by Yen-Hsuan(Terry)<br />
             </div>
         </footer>
     </body>

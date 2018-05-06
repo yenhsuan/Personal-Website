@@ -274,6 +274,111 @@ body {
         min-width: 14rem;
         font-size: 1.2rem; } }
 
+#projects .col {
+  display: inline-flex;
+  min-height: 30rem; }
+  @media screen and (min-width: 1280px) {
+    #projects .col {
+      width: 33% !important; } }
+  @media screen and (max-width: 1280px) {
+    #projects .col {
+      width: 100% !important; } }
+
+.project-cards-container {
+  display: block;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
+  margin: 5rem auto;
+  width: 90%;
+  min-height: 60rem; }
+  @media screen and (max-width: 1280px) {
+    .project-cards-container {
+      width: 75%;
+      min-height: 0; } }
+
+.project-cards-cover {
+  border-radius: 10px 10px 0 0;
+  height: 25rem; }
+  .project-cards-cover-1 {
+    background: url("../img/project-cod.jpg");
+    background-size: cover;
+    background-position: center; }
+  .project-cards-cover-2 {
+    background: url("../img/project-news.jpg");
+    background-size: cover;
+    background-position: center; }
+  .project-cards-cover-3 {
+    background: url("../img/project-coj.jpg");
+    background-size: cover;
+    background-position: center; }
+  .project-cards-cover-4 {
+    background: url("../img/project-yrb.jpg");
+    background-size: cover;
+    background-position: center; }
+  .project-cards-cover-5 {
+    background: url("../img/project-spg.jpg");
+    background-size: cover;
+    background-position: center; }
+  .project-cards-cover-6 {
+    background: url("../img/project-crud.jpg");
+    background-size: cover;
+    background-position: center; }
+
+.project-cards-body {
+  width: 80%;
+  margin: .2rem auto; }
+  .project-cards-body-title h1 {
+    font-weight: 100;
+    color: #333; }
+  .project-cards-body-description {
+    color: #222;
+    word-break: break-all; }
+  .project-cards-body-tags ul {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0; }
+  .project-cards-body-tags li {
+    margin-right: .2rem;
+    display: inline-block;
+    border: 0.1rem solid #888;
+    border-radius: 3px;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    padding: 0 .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap; }
+  .project-cards-body-links {
+    align-items: center;
+    text-align: right;
+    color: #555; }
+    .project-cards-body-links a {
+      text-align: center; }
+    .project-cards-body-links-github {
+      background-color: #555;
+      color: #f3f3f3;
+      min-width: 10rem; }
+    .project-cards-body-links-github:hover {
+      color: #ffa500; }
+    .project-cards-body-links-demo {
+      background-color: #1b8234;
+      color: #f2f2f2;
+      min-width: 10rem; }
+      .project-cards-body-links-demo:hover {
+        color: #ffa500; }
+    .project-cards-body-links-app {
+      background-color: #3b5998;
+      color: #f1f1f1;
+      min-width: 12rem; }
+      .project-cards-body-links-app:hover {
+        color: #fff; }
+
+.project-cards-btn {
+  padding: .5rem .4rem !important;
+  margin: 1rem .5rem 2rem .5rem;
+  font-size: 1.2rem; }
+
 .spinner {
   width: 10rem;
   height: 10rem;
@@ -603,15 +708,18 @@ body {
     font-size: 2.4rem;
     padding-bottom: 1.8rem; }
 
-.about-card:hover {
-  transform: translate(0%, -1%); }
-
 .about-skills {
   /* box-shadow: 0 .4rem 1rem 0 rgba(0, 0, 0, 0.2); */
   margin: 2rem auto;
   padding: 1rem 5rem;
   font-size: 1.7rem;
-  text-align: left; }
+  font-weight: 100;
+  text-align: left;
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .about-skills-heading {
+    font-size: 4rem;
+    color: #555; }
 
 .about-programming-icon {
   margin: 3rem; }
@@ -619,6 +727,19 @@ body {
 .about-icon {
   margin-left: 1rem;
   margin-right: 1rem; }
+
+.about-icon-linkedin {
+  color: #004e92; }
+
+.about-icon-mail {
+  color: #ba2525; }
+  .about-icon-mail:hover {
+    color: #e76666; }
+
+.about-icon-resume {
+  color: #a91e1e; }
+  .about-icon-resume:hover {
+    color: #e13232; }
 
 @media (max-width: 960px) {
   #about {
@@ -641,7 +762,7 @@ body {
     .about-column-2 {
       padding: 0 2.4rem; } }
 
-#project {
+#projects {
   margin: 0;
   padding: 5rem;
   background-color: #444;
@@ -651,10 +772,10 @@ body {
   background-position: center;
   background-size: cover; }
   @media (max-width: 960px) {
-    #project {
+    #projects {
       padding: .75rem; } }
   @media (max-width: 500px) {
-    #project {
+    #projects {
       background-image: none; } }
 
 .project-title {

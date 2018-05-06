@@ -1,0 +1,152 @@
+#projects {
+    .col {
+        display:inline-flex;
+        @media screen and (min-width: 1280px) {
+            width: 33% !important;
+            
+        }
+        
+        @media screen and (max-width: 1280px) {
+            width: 100% !important;
+        }
+        min-height: 30rem;
+    }
+}
+.project-cards {
+
+    &-container {
+        display: block;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+        margin: 5rem auto;
+        @media screen and (max-width: 1280px) {
+            width: 75%;
+            min-height: 0;
+        }
+        width: 90%;
+        min-height: 60rem;
+    }
+    
+    &-cover {
+        border-radius: 10px 10px 0 0;
+        height: 25rem;
+
+        &-1 {
+            background: url("../img/project-cod.jpg");
+            background-size: cover;
+            background-position: center; 
+        }
+
+        &-2 {
+            background: url("../img/project-news.jpg");
+            background-size: cover;
+            background-position: center; 
+        }
+
+        &-3 {
+            background: url("../img/project-coj.jpg");
+            background-size: cover;
+            background-position: center; 
+        }
+
+        &-4 {
+            background: url("../img/project-yrb.jpg");
+            background-size: cover;
+            background-position: center; 
+        }
+
+        &-5 {
+            background: url("../img/project-spg.jpg");
+            background-size: cover;
+            background-position: center; 
+        }
+
+        &-6 {
+            background: url("../img/project-crud.jpg");
+            background-size: cover;
+            background-position: center; 
+        }
+    }
+    
+
+    
+
+    &-body {
+        width: 80%;
+        margin: .2rem auto;
+
+        &-title h1 {
+            font-weight: 100;
+            color: #333;
+        }
+
+        &-description {
+            color: #222;
+            word-break:break-all;
+        }
+        &-tags ul {
+            display: inline-block;
+            list-style: none;
+            padding-left: 0;
+            
+          }
+        &-tags li {
+            margin-right: .2rem;
+            display: inline-block;
+            border: 0.1rem solid #888;
+            border-radius: 3px;
+            font-size: .75rem;
+            letter-spacing: 1px;
+            padding: 0 .5rem;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        &-links {
+            align-items: center;
+            text-align: right;
+            color: #555;
+
+            a {
+                text-align: center;
+            }
+            
+            
+            &-github {
+                background-color: #555;
+                color: #f3f3f3;
+                min-width: 10rem;
+            }
+
+            &-github:hover {
+                color: #ffa500;
+            }
+
+            &-demo {
+                background-color: #1b8234;
+                color: #f2f2f2;
+                min-width: 10rem;
+                &:hover {
+                    color: #ffa500;
+                }
+            }
+
+            &-app {
+                background-color: #3b5998;
+                color: #f1f1f1;
+                min-width: 12rem;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    &-btn {
+        padding: .5rem .4rem !important;
+        margin: 1rem .5rem 2rem .5rem;
+        font-size: 1.2rem;
+    }
+}
+  

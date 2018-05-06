@@ -34,7 +34,7 @@ $(document).ready(() => {
 
     $("a").on('click', (event) => {
         if (event.currentTarget.hash !== "") {
-            if (event.currentTarget.hash === "#project") {
+            if (event.currentTarget.hash === "#projects") {
                 return;
             } 
 
@@ -75,7 +75,7 @@ $(document).ready(() => {
         }
     });
 
-    $("#project-container").inViewport((px) => {
+    $("#project-ancor").inViewport((px) => {
         if (px) {
             $("#li-project").addClass("active");
             $("#li-home").removeClass("active");
