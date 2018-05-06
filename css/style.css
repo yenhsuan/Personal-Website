@@ -277,10 +277,10 @@ body {
 #projects .col {
   display: inline-flex;
   min-height: 30rem; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1300px) {
     #projects .col {
       width: 33% !important; } }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1300px) {
     #projects .col {
       width: 100% !important; } }
 
@@ -289,13 +289,19 @@ body {
   background: #fff;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
-  margin: 5rem auto;
-  width: 90%;
-  min-height: 60rem; }
-  @media screen and (max-width: 1280px) {
+  margin: 5rem auto; }
+  @media screen and (max-width: 1300px) {
     .project-cards-container {
       width: 75%;
-      min-height: 0; } }
+      max-height: 48rem; } }
+  @media screen and (max-width: 600px) {
+    .project-cards-container {
+      width: 80%;
+      max-height: 70rem; } }
+  @media screen and (min-width: 1300px) {
+    .project-cards-container {
+      height: 52rem;
+      width: 85%; } }
 
 .project-cards-cover {
   border-radius: 10px 10px 0 0;
@@ -328,7 +334,7 @@ body {
 .project-cards-body {
   width: 80%;
   margin: .2rem auto; }
-  .project-cards-body-title h1 {
+  .project-cards-body-title h1, .project-cards-body h2, .project-cards-body h3, .project-cards-body h4, .project-cards-body h5 {
     font-weight: 100;
     color: #333; }
   .project-cards-body-description {
@@ -360,13 +366,13 @@ body {
       color: #f3f3f3;
       min-width: 10rem; }
     .project-cards-body-links-github:hover {
-      color: #ffa500; }
+      color: #fff; }
     .project-cards-body-links-demo {
       background-color: #1b8234;
       color: #f2f2f2;
       min-width: 10rem; }
       .project-cards-body-links-demo:hover {
-        color: #ffa500; }
+        color: #fff; }
     .project-cards-body-links-app {
       background-color: #3b5998;
       color: #f1f1f1;
