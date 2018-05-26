@@ -800,7 +800,7 @@ body {
       padding: .75rem; } }
   @media (max-width: 600px) {
     #projects {
-      background-size: auto, 100%; } }
+      background-size: cover, 100%; } }
 
 .project-title {
   text-align: center;
