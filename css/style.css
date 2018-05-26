@@ -765,6 +765,13 @@ body {
   .about-icon-resume:hover {
     color: #e13232; }
 
+.about-info {
+  display: inline; }
+  @media (max-width: 600px) {
+    .about-info {
+      display: block;
+      text-align: right; } }
+
 @media (max-width: 960px) {
   #about {
     padding: 1.2rem; }
