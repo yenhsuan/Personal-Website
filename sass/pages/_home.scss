@@ -154,8 +154,11 @@
     background-image: url(../img/bg-project.jpg);
     background-attachment: fixed;
     background-position: center;
-
-        background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
     
     @media (max-width: 960px) {
         padding: .75rem;
