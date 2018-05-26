@@ -146,19 +146,16 @@
     background-image: url(../img/bg-project.jpg);
     background-attachment: fixed;
     background-position: center;
-    -webkit-background-size: cover;
-   -moz-background-size: cover;
-     -o-background-size: cover;
+
         background-size: cover;
-    
     
     @media (max-width: 960px) {
         padding: .75rem;
     }
 
-    // @media (max-width: 600px) {
-    //     background-size: 100%;
-    // }
+    @media (max-width: 600px) {
+        background-size: auto, 100%;
+    }
 
 }
 
