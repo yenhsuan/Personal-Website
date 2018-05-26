@@ -296,7 +296,7 @@ body {
       max-height: 48rem; } }
   @media screen and (max-width: 600px) {
     .project-cards-container {
-      width: 80%;
+      width: 90%;
       max-height: 70rem; } }
   @media screen and (max-width: 425px) {
     .project-cards-container {
@@ -800,17 +800,13 @@ body {
   background-image: url(../img/bg-project.jpg);
   background-attachment: fixed;
   background-position: center;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   @media (max-width: 960px) {
     #projects {
       padding: .75rem; } }
   @media (max-width: 800px) {
     #projects {
-      background-image: url(../img/bg-project.jpg) no;
-      background-size: auto, 100vh;
-      background-repeat: no-repeat; } }
+      background-size: contain; } }
 
 .project-title {
   text-align: center;
@@ -818,7 +814,3 @@ body {
   margin: 0, 0, 2.5rem, 0;
   font-size: 4rem;
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3) !important; }
-  @media (max-width: 600px) {
-    .project-title {
-      text-shadow: none !important;
-      color: #555; } }
