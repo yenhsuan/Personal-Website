@@ -11,7 +11,7 @@
         height: 100vh;
         left: 0;
         top: 0;
-        background: rgba(0,0,0,0.25);
+        background: rgba(0,0,0,0.5);
     }
 
     &-box {
@@ -22,7 +22,6 @@
         text-align: center;
         @media (max-width: 600px) {
             .btn {
-                font-size: 0.1rem;
                 padding: 1.2rem 4rem 1.2rem 4rem !important;
             }
         }

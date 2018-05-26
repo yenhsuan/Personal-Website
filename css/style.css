@@ -480,7 +480,7 @@ body {
     height: 100vh;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.25); }
+    background: rgba(0, 0, 0, 0.5); }
   .header-box {
     position: absolute;
     top: 50%;
@@ -489,7 +489,6 @@ body {
     text-align: center; }
     @media (max-width: 600px) {
       .header-box .btn {
-        font-size: 0.1rem;
         padding: 1.2rem 4rem 1.2rem 4rem !important; } }
   .header-primary {
     text-transform: uppercase;
@@ -795,6 +794,9 @@ body {
   background-image: url(../img/bg-project.jpg);
   background-attachment: fixed;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   @media (max-width: 960px) {
     #projects {
