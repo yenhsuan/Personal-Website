@@ -154,7 +154,8 @@
     }
 
     @media (max-width: 600px) {
-        background-size: cover, 100%;
+        background: none;
+        background-color: #dddddd;
     }
 
 }
@@ -166,5 +167,9 @@
         margin: 0, 0, 2.5rem, 0;
         font-size: 4rem;
         text-shadow: .1rem .1rem .1rem rgba(#000000, .3) !important;
+        @media (max-width: 600px) {
+            text-shadow: none !important;
+            color: #555;
+        }
     }
 }
