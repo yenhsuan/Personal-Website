@@ -4,7 +4,7 @@
     z-index: 10;
     height: 7.5rem;
     width: 100%;
-    background: rgba(0,0,0,0.85);
+    
     color: #fff;
     line-height: 7.5rem;
     -webkit-transition: all .5s; 
@@ -50,6 +50,7 @@
     &-small {
         height: 4rem !important;
         line-height: 4rem !important;
+        background: rgba(0,0,0,0.85);
     }
     
     &-list li {
