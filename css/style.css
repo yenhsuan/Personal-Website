@@ -275,12 +275,11 @@ body {
         font-size: 1.2rem; } }
 
 #projects .col {
-  display: inline-flex;
-  min-height: 30rem; }
-  @media screen and (min-width: 1300px) {
+  display: inline-flex; }
+  @media screen and (min-width: 1366px) {
     #projects .col {
       width: 33% !important; } }
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1366px) {
     #projects .col {
       width: 100% !important; } }
 
@@ -290,26 +289,31 @@ body {
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
   margin: 5rem auto; }
-  @media screen and (max-width: 1300px) {
-    .project-cards-container {
-      width: 75%;
-      max-height: 48rem; } }
-  @media screen and (max-width: 600px) {
-    .project-cards-container {
-      width: 90%;
-      max-height: 70rem; } }
   @media screen and (max-width: 425px) {
     .project-cards-container {
-      width: 90%;
-      max-height: 70rem; } }
-  @media screen and (min-width: 1300px) {
+      width: 90%; } }
+  @media screen and (max-width: 800px) {
     .project-cards-container {
-      height: 52rem;
       width: 85%; } }
+  @media screen and (max-width: 1366px) {
+    .project-cards-container {
+      min-height: 25rem;
+      width: 80%;
+      margin: 1rem auto; } }
+  @media screen and (min-width: 1366px) {
+    .project-cards-container {
+      width: 80%;
+      height: 52rem; } }
 
 .project-cards-cover {
   border-radius: 10px 10px 0 0;
   height: 25rem; }
+  @media screen and (min-width: 800px) and (max-width: 1366px) {
+    .project-cards-cover {
+      border-radius: 10px 0px 0 10px;
+      display: inline-block;
+      width: 30%;
+      height: 100%; } }
   .project-cards-cover-1 {
     background: url("../img/project-cod.jpg");
     background-size: cover;
@@ -338,6 +342,13 @@ body {
 .project-cards-body {
   width: 80%;
   margin: .2rem auto; }
+  @media screen and (min-width: 800px) and (max-width: 1366px) {
+    .project-cards-body {
+      display: inline-block;
+      width: 68%;
+      vertical-align: top;
+      padding-top: 3rem;
+      padding-left: 3rem; } }
   .project-cards-body-title h1, .project-cards-body h2, .project-cards-body h3, .project-cards-body h4, .project-cards-body h5 {
     font-weight: 100;
     color: #333; }
@@ -480,7 +491,7 @@ body {
     height: 100vh;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(0, 0, 0, 0.3); }
   .header-box {
     position: absolute;
     top: 50%;
