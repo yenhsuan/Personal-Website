@@ -795,18 +795,29 @@ body {
 
 #projects {
   margin: 0;
-  padding: 5rem;
-  background-color: #444;
-  background-image: url(../img/bg-project.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; }
+  padding: 5rem; }
   @media (max-width: 960px) {
     #projects {
       padding: .75rem; } }
   @media (max-width: 800px) {
     #projects {
       background-size: contain; } }
+  #projects:after {
+    content: "";
+    position: fixed;
+    /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* needed to keep in the background */
+    background: url(../img/bg-project.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
 
 .project-title {
   text-align: center;
