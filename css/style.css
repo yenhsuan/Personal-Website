@@ -338,6 +338,10 @@ body {
     background: url("../img/project-crud.jpg");
     background-size: cover;
     background-position: center; }
+  .project-cards-cover-7 {
+    background: url("../img/project-cp.jpg");
+    background-size: cover;
+    background-position: center; }
 
 .project-cards-body {
   width: 80%;
