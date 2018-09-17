@@ -1,13 +1,35 @@
 #about {
-    margin: 0;
+    margin: 0 auto;
     min-height: 98.5vh;
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f2f2f2;
     position: relative;
+
+    .container {
+        max-width: 128rem !important;
+        margin: 0 auto !important;
+    }
+
+    .greet {
+        font-size: 1.8em;
+        padding: 0;
+        margin: 0;
+        display: inline;
+        padding-right: 2rem;
+        color: #3cba54;
+
+        &-normal {
+            color: #f4c20d;
+            font-size: 1em;
+            padding-right: 0rem;
+            padding-left: 2rem;
+            font-weight: 500;
+        }
+    }
+
 }
 
 .about {
-
     &-profile {
         text-align: center;
     }
@@ -17,6 +39,7 @@
         color: #333333;
         margin: 0, 0, 2.5rem, 0;
         font-size: 3rem;
+        font-weight: 200;
     }
 
     &-card {
@@ -55,7 +78,7 @@
 
     &-skills {
         /* box-shadow: 0 .4rem 1rem 0 rgba(0, 0, 0, 0.2); */
-        margin: 2rem auto;
+        margin: 0rem auto;
         padding: 1rem 5rem;
         font-size: 1.7rem;
         font-weight: 100;
@@ -65,7 +88,8 @@
         &-heading {
             font-size: 4rem;
             color: #555;
-            
+            line-height: 6rem;
+            padding-bottom: 3rem;
         } 
         li {
             list-style-position: outside;
@@ -154,6 +178,11 @@
     // background-attachment: fixed;
     // background-position: center;
     // background-size: cover;
+
+    
+        max-width: 136rem !important;
+        margin: 0 auto !important;
+    
     
     @media (max-width: 960px) {
         padding: .75rem;
@@ -187,6 +216,7 @@
         margin: 0, 0, 2.5rem, 0;
         font-size: 4rem;
         text-shadow: .1rem .1rem .1rem rgba(#000000, .3) !important;
+        font-weight: 200;
         // @media (max-width: 600px) {
         //     text-shadow: none !important;
         //     color: #555;
