@@ -1,9 +1,10 @@
 import $ from 'jquery'
+import jQuery from 'jquery'
+import '../js/vertical-timeline.js'
 import '../css/normalize.css'
 import '../css/skeleton.css'
+import '../css/vertical-timeline.css'
 import '../sass/main.scss'
-
-const jQuery = $;
 
 $(document).ready(() => {
     $('<img/>').attr('src', '../img/bg-home.jpg').on('load', function() {
@@ -51,7 +52,7 @@ $(document).ready(() => {
             });
         } 
     });
-
+    
     (function($, win) {
         $.fn.inViewport = function(cb) {
            return this.each(function(i,el){
@@ -92,11 +93,18 @@ $(document).ready(() => {
 
     $('.trigger-open').on('click', () => {
         openNav();
-    })
+    });
 
     $('.trigger-close').on('click', () => {
         closeNav();
-    })
+    });
+
+    $('.timeline').verticalTimeline({
+        startLeft: false,
+        alternate: true,
+        animate: "fade",
+        arrows: false
+    });
 });
 
 function openNav() {

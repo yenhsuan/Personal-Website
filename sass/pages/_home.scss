@@ -1,9 +1,14 @@
 #about {
     margin: 0 auto;
-    min-height: 98.5vh;
-    padding: 15rem;
+    min-height: 100vh;
+	padding: 15rem;
+	padding-bottom: 5rem;
     background-color: #f2f2f2;
-    position: relative;
+	position: relative;
+	
+	@media (max-width: 1280px) {
+		padding: 5rem;
+	}
 
     .container {
         max-width: 128rem !important;
@@ -30,7 +35,44 @@
 
     .swe {
         color: #4885ed;
-    }
+	}
+	
+	.timeline-container {
+		max-width: 102.4rem;
+		margin: 1rem auto;
+		color: white;
+		font-weight: 200;
+		
+		.vtimeline-content {
+			padding: 2rem;
+			border-radius: 1rem;
+		}
+
+		.usc {
+			background-color: #a91e1e !important;
+			color: #fbbc05;
+		}
+
+		.current {
+			background-color: #4885ed;
+		}
+
+		.intern {
+			background-color: lighten(#3cba54, 10%);
+		}
+
+		.timeline-date {
+			font-family: 'Abel';
+		}
+
+		.timeline-title {
+			font-weight: 700;
+		}
+
+		.timeline-content {
+			font-size: 0.9em;
+		}
+	}
 
 }
 
@@ -82,14 +124,14 @@
     }
 
     &-footer {
-        background: white;
-        padding: .5rem;
-        margin-top: 2rem;
-        border-radius: 2rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-
-    
+		display: flex;
+		margin: 4rem auto;
+		max-width: 37.5rem;
+		div {
+			flex: 1 1;
+		}
+	
+	}    
 
     &-skills {
         /* box-shadow: 0 .4rem 1rem 0 rgba(0, 0, 0, 0.2); */
@@ -103,11 +145,11 @@
         &-heading {
             font-size: 3.5rem;
             color: #555;
-            line-height: 6rem;
+            line-height: 5rem;
             padding-bottom: 3rem;
             @media (max-width: 600px) {
                 font-size: 1.2em;
-                line-height: em;
+                line-height: 1.6em;
             }
             
         } 
@@ -257,7 +299,7 @@
         text-align: center;
         color: #333;
         margin: 0, 0, 2.5rem, 0;
-        font-size: 5rem;
+        font-size: 6rem;
         // text-shadow: .1rem .1rem .1rem rgba(#000000, .3) !important;
     }
 }

@@ -79,3 +79,58 @@
         display: none;
     }
 }
+
+.circle-icon-btn {
+
+    position: relative;
+    display: inline-block !important;
+    width: 7rem;
+    height: 7rem;
+
+    border-radius: 100%;
+    background: #333;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+
+    @media (max-width: 960px) {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5rem;
+        @media (max-width: 960px) {
+            font-size: 3rem;
+        }
+    }
+
+    transition: all linear 0.2s;
+
+    &-linkedin {
+        background: #0077b5;
+        &:hover {
+            background: darken(#0077b5, 5%);
+        }
+    }
+
+    &-mail {
+        background: #c71610;
+        &:hover {
+            background: darken(#c71610, 5%);
+        }
+    }
+
+    &-resume {
+        background: #a91e1e;
+        &:hover {
+            background: darken(#a91e1e, 5%);
+        }
+    }
+}
