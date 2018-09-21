@@ -1,15 +1,19 @@
 .navbar {
-    li {
-        color:#333;
-        font-weight: 700;
-        font-size: 1.1em;
+    // li {
+    //     color:#333;
+    //     font-weight: 700;
+    //     font-size: 1.1em;
+    // }
+    a {
+        color: #F4B400;
     }
     position: fixed;
     top: 0;
     z-index: 10;
     height: 7.5rem;
     width: 100%;
-
+    opacity: 0;
+    pointer-events: none;
     
     color: #fff;
     line-height: 7.5rem;
@@ -63,6 +67,8 @@
         height: 4rem !important;
         line-height: 4rem !important;
         background: rgba(0,0,0,0.85);
+        opacity: 1;
+        pointer-events: all;
         
         
         li {
