@@ -84,9 +84,9 @@
 
     position: relative;
     display: inline-block !important;
-    width: 7rem;
-    height: 7rem;
-
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
     border-radius: 100%;
     background: #333;
     color: white;
@@ -95,20 +95,12 @@
         color: white;
     }
 
-    @media (max-width: 960px) {
-        width: 6rem;
-        height: 6rem;
-    }
-
     i {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        font-size: 3.5rem;
-        @media (max-width: 960px) {
-            font-size: 3rem;
-        }
+        font-size: 2rem;
     }
 
     transition: all linear 0.2s;

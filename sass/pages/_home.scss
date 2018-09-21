@@ -39,9 +39,14 @@
 	
 	.timeline-container {
 		max-width: 102.4rem;
-		margin: 1rem auto;
+        margin: 1rem auto;
+        margin-bottom: -5rem;
 		color: white;
-		font-weight: 200;
+        font-weight: 200;
+        
+        @media (max-width: 960px) {
+            margin-bottom: 1rem;
+        }
 		
 		.vtimeline-content {
 			padding: 2rem;
@@ -49,16 +54,17 @@
 		}
 
 		.usc {
-			background-color: #a91e1e !important;
+            background-image: linear-gradient(to top right, #a91e1e, lighten(#a91e1e, 10%));
 			color: #fbbc05;
 		}
 
 		.current {
-			background-color: #4885ed;
+			background-image: linear-gradient(to top right, #4885ed, lighten(#4885ed, 10%));
 		}
 
 		.intern {
-			background-color: lighten(#3cba54, 10%);
+            background-image: linear-gradient(to top right, #3cba54, lighten(#3cba54, 10%));
+			
 		}
 
 		.timeline-date {
@@ -66,7 +72,8 @@
 		}
 
 		.timeline-title {
-			font-weight: 700;
+            font-weight: 700;
+            font-size: 1.3em;
 		}
 
 		.timeline-content {
@@ -125,10 +132,9 @@
 
     &-footer {
 		display: flex;
-		margin: 4rem auto;
-		max-width: 37.5rem;
+        justify-content: center;
 		div {
-			flex: 1 1;
+			flex: 0 1;
 		}
 	
 	}    
@@ -158,6 +164,15 @@
             list-style-type: square;
             margin-left: 1em;
             color: #333;
+        }
+
+        a {
+            color: #3cba54;
+            font-weight: 700;
+            
+            &:hover {
+                color: darken(#3cba54, 10%);
+            }
         }
     }
     

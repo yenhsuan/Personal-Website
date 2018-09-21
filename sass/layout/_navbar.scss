@@ -1,17 +1,26 @@
 .navbar {
-    a {
-        color:#F4B400;
+    li {
+        color:#333;
+        font-weight: 700;
+        font-size: 1.1em;
     }
     position: fixed;
     top: 0;
     z-index: 10;
     height: 7.5rem;
     width: 100%;
+
     
     color: #fff;
     line-height: 7.5rem;
     -webkit-transition: all .5s; 
     transition: all .5s;
+
+    &-container {
+        display: block;
+        max-width: 128rem;
+        margin: 0 auto;
+    }
     
     &-logo {
         opacity: .9;
@@ -54,6 +63,12 @@
         height: 4rem !important;
         line-height: 4rem !important;
         background: rgba(0,0,0,0.85);
+        
+        
+        li {
+            color: #F4B400;
+            font-size: 1em;
+        }
     }
     
     &-list li {
